@@ -1,30 +1,37 @@
+<!--
+ * @Author: wangchaoxu
+ * @Date: 2020-11-26 15:19:42
+ * @LastEditors: wangchaoxu
+ * @LastEditTime: 2020-12-23 14:03:16
+ * @Description: In User Settings Edit
+ * @FilePath: \vue3-ts\src\App.vue
+-->
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <ConfigProvider :locale="locale">
+    <router-view />
+  </ConfigProvider>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script lang="ts">
+  import { defineComponent, reactive, toRefs } from 'vue';
+  import EnUs from 'ant-design-vue/es/locale/zh_CN';
+  export default defineComponent({
+    name: 'App',
+    setup() {
+      const state = reactive({
+        locale: EnUs,
+      });
+      return {
+        ...toRefs(state),
+      };
+    },
+  });
+</script>
+<style scopd lang="less">
+  html,
+  body,
+  #app {
+    width: 100%;
+    height: 100%;
   }
-}
 </style>
