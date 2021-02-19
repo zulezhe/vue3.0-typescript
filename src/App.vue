@@ -1,32 +1,16 @@
 <!--
  * @Author: wangchaoxu
  * @Date: 2020-11-26 15:19:42
- * @LastEditors: wangchaoxu
- * @LastEditTime: 2020-12-23 14:03:16
+ * @LastEditors: zulezhe
+ * @LastEditTime: 2021-02-19 15:08:19
  * @Description: In User Settings Edit
- * @FilePath: \vue3-ts\src\App.vue
+ * @FilePath: \font-end-project-vue3-ts\src\App.vue
 -->
 <template>
-  <ConfigProvider :locale="locale">
-    <router-view />
-  </ConfigProvider>
+  <router-view />
 </template>
 
-<script lang="ts">
-  import { defineComponent, reactive, toRefs } from 'vue';
-  import EnUs from 'ant-design-vue/es/locale/zh_CN';
-  export default defineComponent({
-    name: 'App',
-    setup() {
-      const state = reactive({
-        locale: EnUs,
-      });
-      return {
-        ...toRefs(state),
-      };
-    },
-  });
-</script>
+<script lang="ts"></script>
 <style scopd lang="less">
   html,
   body,

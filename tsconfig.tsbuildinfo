@@ -261,19 +261,29 @@
         "signature": "db6ca7a40a1c61e910f5ff9b9f06f785601c4b352ecbf98b5c1823b9bde2a2f2",
         "affectsGlobalScope": false
       },
-      "./node_modules/ant-design-vue/es/locale/zh_cn.d.ts": {
-        "version": "eb4207629bec543b17887153ac33a0b8e4f0dc7f1765119f983b6634c70d4a54",
-        "signature": "eb4207629bec543b17887153ac33a0b8e4f0dc7f1765119f983b6634c70d4a54",
-        "affectsGlobalScope": false
-      },
-      "./src/app.vue.ts": {
-        "version": "e4b5aaf5226156cb84d4f08da7197a2b427ca5449f6f47c452b2fabd98a46197",
-        "signature": "cc753301d09a721de6e66fdf888c4a5e153a0c6ab1764f811254f10ac73dfc80",
+      "./src/app.vue.js": {
+        "version": "450f0af4f4c1ecc4c7180f2e364c8a59bfed69dd350fb6b47bce8641c2a37786",
+        "signature": "0c492fd83d092a9a8793e961b9b1e8ef1168e0ea5cd510468047a171344ab3fb",
         "affectsGlobalScope": false
       },
       "./node_modules/vue-router/dist/vue-router.d.ts": {
         "version": "100d91b448f108ed399e6b6ab1d38a62efd58016147b4cec9279f96ff14cf463",
         "signature": "100d91b448f108ed399e6b6ab1d38a62efd58016147b4cec9279f96ff14cf463",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/ant-design-vue/es/locale/zh_cn.d.ts": {
+        "version": "eb4207629bec543b17887153ac33a0b8e4f0dc7f1765119f983b6634c70d4a54",
+        "signature": "eb4207629bec543b17887153ac33a0b8e4f0dc7f1765119f983b6634c70d4a54",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/ant-design-vue/es/locale/default.d.ts": {
+        "version": "0a22e19d0bbd8565350813b5389b69631a652169f0fae72e1c7b40ddcfe81f9f",
+        "signature": "0a22e19d0bbd8565350813b5389b69631a652169f0fae72e1c7b40ddcfe81f9f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/ant-design-vue/es/locale/en_us.d.ts": {
+        "version": "b805bdbe3ee10aac50ab1fc7434f26f52088f8a675de0627a2646f4fb148c085",
+        "signature": "b805bdbe3ee10aac50ab1fc7434f26f52088f8a675de0627a2646f4fb148c085",
         "affectsGlobalScope": false
       },
       "./node_modules/@ant-design/icons-vue/lib/components/icon.d.ts": {
@@ -4252,8 +4262,8 @@
         "affectsGlobalScope": false
       },
       "./src/components/dropdown/index.vue.ts": {
-        "version": "abdbda6de69742b1a2ecc051af8b9ec3cf9a566601c1e177e81505bc51682f77",
-        "signature": "b54ee803954d668e8e347e0fe4a4cc86649e400039f4e30a00bc3ed3ac648ae2",
+        "version": "56ec4efd11ca6bc34edeeffcccb9391c4f96f7a654b294daa18b8e808ce4391b",
+        "signature": "c7657054eac7defe690912cece46f42c292ab945fa4be84a8e51d3812f679fac",
         "affectsGlobalScope": false
       },
       "./src/layout/header.vue.ts": {
@@ -4262,8 +4272,8 @@
         "affectsGlobalScope": false
       },
       "./src/layout/index.vue.ts": {
-        "version": "af33023fefce5c69e956999bc6b1714ecb5cf8eeb58a88e9fbad13a52b1d1f97",
-        "signature": "03cc72bc35c3fce5151f920734629edf9d3183833332d64f5f760e55ff5c7909",
+        "version": "a60d122a0fa795bd3800aa90ee5565f9edaea4547c8f215252b0591bb2e3e74f",
+        "signature": "7498eb9fac79414fa4cf2d07e8496959048e4a714780b1a2132f447e39e35b15",
         "affectsGlobalScope": false
       },
       "./src/components/particle/canvas.ts": {
@@ -5172,7 +5182,7 @@
         "affectsGlobalScope": false
       },
       "./src/plugin/ant-design-vue/index.ts": {
-        "version": "043c540ab15bf66a15df8a8d1e26ce40c6b95e5d452afbef02e804c51d9031e7",
+        "version": "8a46281ce10eb1acd85efc4a281ed9f2c55caf631d9100f931edfbe63ed5eb41",
         "signature": "e3b1d4cda7b38e2b65d3b28229990b9e507b569e2eb55ed0f794c1a0804b7d66",
         "affectsGlobalScope": false
       },
@@ -10025,6 +10035,9 @@
         "./node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
         "./node_modules/csstype/index.d.ts"
       ],
+      "./node_modules/ant-design-vue/es/locale/en_us.d.ts": [
+        "./node_modules/ant-design-vue/es/locale/default.d.ts"
+      ],
       "./node_modules/ant-design-vue/lib/_util/type.d.ts": [
         "./node_modules/vue/dist/vue.d.ts"
       ],
@@ -10953,13 +10966,11 @@
       "./src/api/user.ts": [
         "./src/utils/request.ts"
       ],
-      "./src/app.vue.ts": [
-        "./node_modules/vue/dist/vue.d.ts",
-        "./src/types/module.d.ts"
-      ],
       "./src/components/dropdown/index.vue.ts": [
         "./node_modules/@ant-design/icons-vue/lib/index.d.ts",
-        "./node_modules/vue/dist/vue.d.ts"
+        "./node_modules/ant-design-vue/es/locale/en_us.d.ts",
+        "./node_modules/vue/dist/vue.d.ts",
+        "./src/types/module.d.ts"
       ],
       "./src/components/helloworld.vue.ts": [
         "./node_modules/vue-class-component/dist/vue-class-component.d.ts"
@@ -10997,12 +11008,14 @@
         "./src/components/dropdown/index.vue.ts"
       ],
       "./src/layout/index.vue.ts": [
+        "./node_modules/ant-design-vue/es/locale/en_us.d.ts",
         "./node_modules/vue/dist/vue.d.ts",
-        "./src/layout/header.vue.ts"
+        "./src/layout/header.vue.ts",
+        "./src/types/module.d.ts"
       ],
       "./src/main.ts": [
         "./node_modules/vue/dist/vue.d.ts",
-        "./src/app.vue.ts",
+        "./src/app.vue.js",
         "./src/locales/index.ts",
         "./src/plugin/ant-design-vue/index.ts",
         "./src/router/index.ts",
@@ -15266,6 +15279,9 @@
         "./node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
         "./node_modules/csstype/index.d.ts"
       ],
+      "./node_modules/ant-design-vue/es/locale/en_us.d.ts": [
+        "./node_modules/ant-design-vue/es/locale/default.d.ts"
+      ],
       "./node_modules/ant-design-vue/lib/_util/type.d.ts": [
         "./node_modules/vue/dist/vue.d.ts"
       ],
@@ -16190,9 +16206,6 @@
         "./node_modules/vue-router/dist/vue-router.d.ts",
         "./node_modules/vue/dist/vue.d.ts",
         "./node_modules/vuex/types/index.d.ts"
-      ],
-      "./src/app.vue.ts": [
-        "./node_modules/vue/dist/vue.d.ts"
       ],
       "./src/components/dropdown/index.vue.ts": [
         "./node_modules/vue/dist/vue.d.ts"
@@ -17130,6 +17143,8 @@
       "./node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
       "./node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts",
       "./node_modules/@vue/shared/dist/shared.d.ts",
+      "./node_modules/ant-design-vue/es/locale/default.d.ts",
+      "./node_modules/ant-design-vue/es/locale/en_us.d.ts",
       "./node_modules/ant-design-vue/es/locale/zh_cn.d.ts",
       "./node_modules/ant-design-vue/lib/_util/responsiveobserve.d.ts",
       "./node_modules/ant-design-vue/lib/_util/type.d.ts",
@@ -17348,7 +17363,7 @@
       "./node_modules/vuex/types/logger.d.ts",
       "./node_modules/vuex/types/vue.d.ts",
       "./src/api/user.ts",
-      "./src/app.vue.ts",
+      "./src/app.vue.js",
       "./src/components/dropdown/index.vue.ts",
       "./src/components/helloworld.vue.ts",
       [

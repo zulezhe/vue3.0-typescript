@@ -1,18 +1,21 @@
 <!--
  * @Author: wangchaoxu
  * @Date: 2020-12-22 18:53:33
- * @LastEditors: wangchaoxu
- * @LastEditTime: 2020-12-23 11:31:51
+ * @LastEditors: zulezhe
+ * @LastEditTime: 2021-02-19 15:11:54
  * @Description: In User Settings Edit
- * @FilePath: \vue3-ts\src\components\Dropdown\index.vue
+ * @FilePath: \font-end-project-vue3-ts\src\components\Dropdown\index.vue
 -->
 <template>
   <a-dropdown :trigger="['click']">
     <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">切换语言<DownOutlined /> </a>
     <template #overlay>
       <a-menu>
-        <a-menu-item v-for="(item, index) in items" :key="index">
-          <a href="http://www.alipay.com/">{{ item.title }}</a>
+        <a-menu-item @click="menuItemClick(zhCN.locale)">
+          <a href="javascript:;">中文</a>
+        </a-menu-item>
+        <a-menu-item @click="menuItemClick(EnUs.locale)">
+          <a href="javascript:;">英文</a>
         </a-menu-item>
       </a-menu>
     </template>
@@ -22,33 +25,32 @@
 <script lang="ts">
   import { DownOutlined } from '@ant-design/icons-vue';
   import { defineComponent, reactive, toRefs } from 'vue';
-  //
+  import zhCN from 'ant-design-vue/es/locale/zh_CN';
+  import EnUs from 'ant-design-vue/es/locale/en_US';
   export default defineComponent({
     name: 'WDropdown',
     components: {
       DownOutlined,
     },
-    setup() {
+    setup(props, ctx) {
+      console.log(props);
       const state = reactive({
-        items: [
-          {
-            title: '中文',
-            href: 'javascript:;',
-          },
-          {
-            title: '英文',
-            href: 'javascript:;',
-          },
-        ],
         title: '切换语言',
         isActive: false,
       });
       function clickTitle() {
         state.isActive = !state.isActive;
       }
+      function menuItemClick(val: string) {
+        console.log(val);
+        ctx.emit('changeLocale', val);
+      }
       return {
         ...toRefs(state),
         clickTitle,
+        menuItemClick,
+        EnUs,
+        zhCN,
       };
     },
   });
