@@ -5091,6 +5091,31 @@
         "signature": "7498eb9fac79414fa4cf2d07e8496959048e4a714780b1a2132f447e39e35b15",
         "affectsGlobalScope": false
       },
+      "./src/views/index/index.vue.ts": {
+        "version": "86cb435e04a1fef3ddd4c19a01a526f9dceb9bf18d30683e62351e35f8fd591c",
+        "signature": "8d5839d2484a2528badb102e5d641f96139e000dbcfebb99d46372f1a9b45106",
+        "affectsGlobalScope": false
+      },
+      "./src/views/tjfx/index.vue.ts": {
+        "version": "86cb435e04a1fef3ddd4c19a01a526f9dceb9bf18d30683e62351e35f8fd591c",
+        "signature": "8d5839d2484a2528badb102e5d641f96139e000dbcfebb99d46372f1a9b45106",
+        "affectsGlobalScope": false
+      },
+      "./src/views/qxfw/index.vue.ts": {
+        "version": "86cb435e04a1fef3ddd4c19a01a526f9dceb9bf18d30683e62351e35f8fd591c",
+        "signature": "8d5839d2484a2528badb102e5d641f96139e000dbcfebb99d46372f1a9b45106",
+        "affectsGlobalScope": false
+      },
+      "./src/views/fzjz/index.vue.ts": {
+        "version": "a3e0ee2d052ef4074e7bfa8641e3e8f64d62b419867c0d4dd687bf0bc05b156a",
+        "signature": "8d5839d2484a2528badb102e5d641f96139e000dbcfebb99d46372f1a9b45106",
+        "affectsGlobalScope": false
+      },
+      "./src/views/xtgl/index.vue.ts": {
+        "version": "86cb435e04a1fef3ddd4c19a01a526f9dceb9bf18d30683e62351e35f8fd591c",
+        "signature": "8d5839d2484a2528badb102e5d641f96139e000dbcfebb99d46372f1a9b45106",
+        "affectsGlobalScope": false
+      },
       "./src/components/particle/canvas.ts": {
         "version": "d11fb669aacce2dc1d003431314b7a72a1cc4bac604f6b2cbb970217de5f4768",
         "signature": "7f90f7621f92ffed6125de5752322968fcdc650207a00111c6351a681b71cc32",
@@ -11035,8 +11060,12 @@
       "./src/router/index.ts": [
         "./node_modules/vue-router/dist/vue-router.d.ts",
         "./src/layout/index.vue.ts",
-        "./src/shims-vue.d.ts",
-        "./src/views/login/index.vue.ts"
+        "./src/views/fzjz/index.vue.ts",
+        "./src/views/index/index.vue.ts",
+        "./src/views/login/index.vue.ts",
+        "./src/views/qxfw/index.vue.ts",
+        "./src/views/tjfx/index.vue.ts",
+        "./src/views/xtgl/index.vue.ts"
       ],
       "./src/shims-vue.d.ts": [
         "./node_modules/vue/dist/vue.d.ts"
@@ -11113,6 +11142,12 @@
         "./src/shims-vue.d.ts",
         "./src/utils/request/axiostransform.ts"
       ],
+      "./src/views/fzjz/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/index/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
       "./src/views/login/form/index copy.vue.ts": [
         "./node_modules/@ant-design/icons-vue/lib/index.d.ts",
         "./node_modules/vue/dist/vue.d.ts",
@@ -11130,6 +11165,15 @@
         "./node_modules/vue/dist/vue.d.ts",
         "./src/components/particle/index.vue.ts",
         "./src/views/login/form/index.vue.ts"
+      ],
+      "./src/views/qxfw/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/tjfx/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/xtgl/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -16284,6 +16328,12 @@
       "./src/utils/request/types.ts": [
         "./src/utils/request/axiostransform.ts"
       ],
+      "./src/views/fzjz/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/index/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
       "./src/views/login/form/index copy.vue.ts": [
         "./node_modules/vue/dist/vue.d.ts"
       ],
@@ -16291,6 +16341,15 @@
         "./node_modules/vue/dist/vue.d.ts"
       ],
       "./src/views/login/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/qxfw/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/tjfx/index.vue.ts": [
+        "./node_modules/vue/dist/vue.d.ts"
+      ],
+      "./src/views/xtgl/index.vue.ts": [
         "./node_modules/vue/dist/vue.d.ts"
       ]
     },
@@ -17842,10 +17901,15 @@
       ],
       "./src/utils/storage.ts",
       "./src/utils/validate.ts",
+      "./src/views/fzjz/index.vue.ts",
+      "./src/views/index/index.vue.ts",
       "./src/views/login/form/check.ts",
       "./src/views/login/form/index copy.vue.ts",
       "./src/views/login/form/index.vue.ts",
-      "./src/views/login/index.vue.ts"
+      "./src/views/login/index.vue.ts",
+      "./src/views/qxfw/index.vue.ts",
+      "./src/views/tjfx/index.vue.ts",
+      "./src/views/xtgl/index.vue.ts"
     ]
   },
   "version": "3.9.7"
