@@ -2,7 +2,7 @@
  * @Author: zulezhe
  * @Date: 2020-11-27 09:50:59
  * @LastEditors: zulezhe
- * @LastEditTime: 2021-02-19 15:20:28
+ * @LastEditTime: 2021-03-02 18:26:00
  * @Description: In User Settings Edit
  * @FilePath: \font-end-project-vue3-ts\src\layout\index.vue
 -->
@@ -10,9 +10,7 @@
   <a-layout class="layout">
     <layout-header @changeLocale="changeLocale"></layout-header>
     <div class="main-container">
-      <ConfigProvider :locale="locale === 'en' ? EnUs : zhCN">
-        <a-date-picker class="a-date-picker" />
-      </ConfigProvider>
+      <router-view></router-view>
     </div>
   </a-layout>
 </template>
@@ -51,16 +49,12 @@
     display: flex;
     overflow: hidden;
     height: 100vh;
-    .ant-layout {
-      overflow: hidden;
-    }
-
-    .layout-content {
-      flex: none;
-    }
+    background-color: #0b257b;
     .main-container {
-      width: 100%;
-      height: 100%;
+      width: 99%;
+      height: 92%;
+      margin: 0 auto;
+      border: 1px solid red;
       .a-date-picker {
         height: 50px;
         width: 200px;

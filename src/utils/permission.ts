@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2020-10-26 20:27:30
- * @LastEditTime: 2020-12-22 17:10:27
- * @LastEditors: wangchaoxu
+ * @LastEditTime: 2021-03-02 18:07:07
+ * @LastEditors: zulezhe
  * @Description: In User Settings Edit
- * @FilePath: \vue3-ts\src\utils\permission.ts
+ * @FilePath: \font-end-project-vue3-ts\src\utils\permission.ts
  */
 import NProgress from 'nprogress'; // 进度条
 import 'nprogress/nprogress.css';
@@ -27,8 +27,8 @@ router.beforeEach(async (to: any, from: any, next: any) => {
       next();
     } else {
       NProgress.done();
-      store.commit('doRemove');
-      next('/signs');
+      // store.commit('doRemove');
+      next('/login');
     }
   }
 });

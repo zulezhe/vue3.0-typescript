@@ -1,8 +1,8 @@
 /*
  * @Author: wangchaoxu
  * @Date: 2020-08-10 15:56:22
- * @LastEditors: wangchaoxu
- * @LastEditTime: 2020-08-10 19:19:53
+ * @LastEditors: zulezhe
+ * @LastEditTime: 2021-02-20 18:36:06
  * @Description: 公用工具库
  */
 /**
@@ -156,7 +156,7 @@ export const isBase64 = (str: string): boolean => {
   }
 };
 // 对象转JSON
-export const toJSON = (obj) => {
+export const toJSON = (obj: 'object') => {
   return JSON.stringify(obj, (key, value) => {
     switch (true) {
       case typeof value === 'undefined':
@@ -181,7 +181,7 @@ export const isDev = process.env.NODE_ENV == 'development';
  *  格式化日期
  * @param time
  */
-export const formatDate = (time) => dayjs(time).format('YYYY-MM-DD HH:mm:ss');
+export const formatDate = (time: any) => dayjs(time).format('YYYY-MM-DD HH:mm:ss');
 
 /**
  *   将一维数组转成树形结构数据

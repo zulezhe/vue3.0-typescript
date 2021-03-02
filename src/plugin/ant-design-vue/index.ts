@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-26 16:34:47
- * @LastEditTime: 2021-02-19 14:56:23
+ * @LastEditTime: 2021-03-02 17:48:29
  * @LastEditors: zulezhe
  * @Description: In User Settings Edit
  * @FilePath: \font-end-project-vue3-ts\src\plugin\ant-design-vue\index.ts
@@ -26,7 +26,7 @@ import {
   Checkbox,
   Dropdown,
   Menu,
-  DatePicker 
+  DatePicker,
 } from 'ant-design-vue';
 
 export function setupAntd(app: App<Element>) {

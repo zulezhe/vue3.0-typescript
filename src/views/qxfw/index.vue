@@ -1,24 +1,21 @@
 <!--
- * @Author: your name
- * @Date: 2020-11-27 16:39:55
- * @LastEditTime: 2021-03-02 18:10:35
+ * @Author: zulezhe
+ * @Date: 2021-03-02 18:01:57
  * @LastEditors: zulezhe
+ * @LastEditTime: 2021-03-02 18:02:25
  * @Description: In User Settings Edit
- * @FilePath: \font-end-project-vue3-ts\src\views\login\index.vue
+ * @FilePath: \font-end-project-vue3-ts\src\views\qxfw\index.vue
 -->
 <template>
-  <div class="login-container">
-    <w-canvas></w-canvas>
-    <w-form></w-form>
+  <div class="container">
+    <h1>气象服务</h1>
   </div>
 </template>
 <script lang="ts">
   import { defineComponent, reactive, toRefs } from 'vue';
-  import WCanvas from '@/components/Particle/index.vue';
-  import WForm from './form/index.vue';
   export default defineComponent({
     name: '',
-    components: { WForm, WCanvas },
+    components: {},
     setup() {
       const state = reactive({
         account: '内容',
@@ -30,7 +27,7 @@
   });
 </script>
 <style lang="less" scoped>
-  .login-container {
+  .container {
     width: 100vw;
     height: 100%;
   }
